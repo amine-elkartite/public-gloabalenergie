@@ -1,0 +1,69 @@
+/* Offline cleanup only. Do NOT override the original theme header/navigation. */
+img { max-width: 100%; height: auto; }
+.offline-form-note {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #111;
+}
+.offline-success-message {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid #9bc59b;
+  border-radius: 6px;
+  background: #f3fff3;
+  font-weight: 600;
+  color: #111;
+}
+.offline-link { cursor: default; }
+#chat-widget-container,
+#ls_colorbox,
+#ls_cboxOverlay,
+.ls-ensure-loaded,
+iframe[src*="facebook"],
+iframe[src*="google"],
+iframe[src*="doubleclick"] {
+  display: none !important;
+}
+
+
+/* improved Global Energie logo */
+.navbar-brand {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.navbar-brand > img {
+  height: 58px !important;
+  width: auto !important;
+  max-width: min(760px, 78vw) !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+header.main .navbar-header,
+header.main .container {
+  min-height: 82px;
+}
+@media (min-width: 992px) {
+  .navbar-brand > img {
+    height: 72px !important;
+    max-width: 760px !important;
+  }
+  .navbar-brand {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  header.main .navbar-header,
+  header.main .container {
+    min-height: 96px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand > img {
+    height: 46px !important;
+    max-width: 72vw !important;
+  }
+}
